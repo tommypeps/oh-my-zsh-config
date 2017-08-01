@@ -1,11 +1,37 @@
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jose/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+
+ZSH_THEME="amuse"
+
+# Example aliases
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
+alias lt='ls -lGt'
+alias ll='ls -lG'
+alias la='ls -la'
+alias cls='clear'
+alias ip='curl ipecho.net/plain; echo'
+#alias psql=/usr/local/pgsql-9.2/bin/psql
+alias prettyJson='python -m json.tool'
+
+
+#git command
+alias gco='git commit -am'
+#path alias
+alias nodejs="cd /Users/tommypeps/Documents/nodeJS/"
+#git
+alias gA="git add"
+alias gM="git commit"
+
+
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -22,8 +48,8 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+# Uncomment the following line to disable command auto-correction.
+# DISABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -44,15 +70,14 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git encode64)
+plugins=(git encode64 jsontools osx  battery history screen sublime )
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/ImageMagick/bin:/usr/local/MacGPG2/bin"
+export PATH="/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -70,13 +95,15 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias mphp="/Applications/MAMP/bin/php/php5.6.2/bin/php"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### add by the postgerl
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
+### add PostGIS
+export PATH=/usr/local/pgsql-9.3/bin:$PATH
+
+### java 1.8 
+export PATH="/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java:$PATH"
