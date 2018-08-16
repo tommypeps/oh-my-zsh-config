@@ -20,6 +20,7 @@ alias cls='clear'
 alias ip='curl ipecho.net/plain; echo'
 #alias psql=/usr/local/pgsql-9.2/bin/psql
 alias prettyJson='python -m json.tool'
+alias h="history"
 
 
 #git command
