@@ -11,8 +11,8 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="amuse"
 
 # Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="nano ~/.zshrc"
+alias ohmyzsh="nano ~/.oh-my-zsh"
 alias lt='ls -lGt'
 alias ll='ls -lG'
 alias la='ls -la'
@@ -21,6 +21,7 @@ alias ip='curl ipecho.net/plain; echo'
 #alias psql=/usr/local/pgsql-9.2/bin/psql
 alias prettyJson='python -m json.tool'
 alias h="history"
+alias c="clear"
 
 
 #git command
@@ -30,7 +31,6 @@ alias nodejs="cd /Users/tommypeps/Documents/nodeJS/"
 #git
 alias gA="git add"
 alias gM="git commit"
-
 
 
 
