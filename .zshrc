@@ -18,6 +18,11 @@ alias prettyJson='python -m json.tool'
 alias h="history"
 alias c="clear"
 
+alias pi="pod install"
+alias sourcetree="open -a sourcetree"
+alias initXcodeProject="rm Podfile.lock 2> /dev/null; pi; open *.xcworkspace"
+
+
 
 # Command git
 
