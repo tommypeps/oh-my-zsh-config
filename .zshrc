@@ -21,7 +21,7 @@ alias c="clear"
 alias pi="pod install"
 alias sourcetree="open -a sourcetree"
 alias initXcodeProject="rm Podfile.lock 2> /dev/null; pi; open *.xcworkspace"
-
+alias vscode="open -a /Applications/Visual\ Studio\ Code.app/"
 
 
 # Command git
