@@ -17,6 +17,7 @@ alias ip='curl ipecho.net/plain; echo'
 alias prettyJson='python -m json.tool'
 alias h="history"
 alias c="clear"
+alias o="open"
 
 alias pi="pod install"
 alias sourcetree="open -a sourcetree"
